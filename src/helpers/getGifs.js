@@ -1,10 +1,14 @@
 
-
-
-export const getGifs = async( category ) => {
-    const api_key = 'YV5aIOS7VFn8aDqi34Rr6uQHpl4nwPfJ';
-    const url = 'https://api.giphy.com/v1/gifs/search';
-    const limit = 10;
+/**
+ * Esta función realiza la petición al api.
+ * @function
+ * @param {String} category - Nombre de la categoria a buscar.
+ * @param {String} api_key - Clave personal obtenida en la pagina del api.
+ * @param {String} url - Url de la api a la cuál se realiza la petición.
+ * @param {Number} limit - Limite de resultados a traer desde el api.
+ * @returns {Array<Object>} - [{ id, title, url }, ...{}]
+ */
+ export const getGifs = async( category, api_key, url, limit) => {
 
     const resp = await fetch(`${url}?api_key=${api_key}&q=${ encodeURI( category )}&limit=${limit}`)
     const {data} = await resp.json();
