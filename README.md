@@ -21,4 +21,4 @@ Cabe destacar que tenemos un archivo **.env.example** el cuál es un ejemplo del
 
 ## Documentación 🖇️
 
-Por favor dirijase a la [documentación](https://gist.github.com/villanuevand/xxxxxx) para obetener detalles acerca del funcionamiento del código.
+Por favor dirijase a la [documentación](https://lukitasojeda.github.io/git-expert-app-vite/) para obetener detalles acerca del funcionamiento del código.

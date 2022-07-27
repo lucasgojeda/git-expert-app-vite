@@ -7,11 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "docs": "jsdoc -c jsdoc.json"
+    "docs": "jsdoc -c jsdoc.json",
+    "deploy-docs": "gh-pages -d docs"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
     "docdash": "^1.2.0",
+    "gh-pages": "^4.0.0",
     "jsdoc3-bootstrap": "^0.15.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
