@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Documentación - Gif Expert App</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link href="styles/bootstrap.css" rel="stylesheet">
+    <link href="styles/docs.css" rel="stylesheet">
+    <link href="styles/bootstrap-custom.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span4">
+                <h2><a href="index.html">Inicio</a></h2>
+                <div class="well well-small">
+                    <ul class="nav nav-list">
+                        <li class="nav-header">Modules</li>
+                        <li><a href="module-AddCategory.html">AddCategory</a></li>
+                        <li><a href="module-GifExpertApp.html">GifExpertApp</a></li>
+                        <li><a href="module-GifGrid.html">GifGrid</a></li>
+                        <li><a href="module-GifGridItem.html">GifGridItem</a></li>
+                    </ul>
+                </div>
+                <div class="well well-small">
+                    <ul class="nav nav-list">
+                        <li class="nav-header">Global</li>
+                        <li><a href="global.html#getGifs"><i class="icon-globe" style="color: black;"></i> getGifs</a>
+                        </li>
+                        <li><a href="global.html#useFetchGifs"><i class="icon-globe" style="color: black;"></i>
+                                useFetchGifs</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="span8">
+                <h1 class="page-header">Global</h1>
+
+
+
+
+                <section>
+
+                    <header>
+                        <!--h2>
+    
+    </h2-->
+
+                    </header>
+
+                    <article>
+                        <div class="container-overview hero-unit">
+
+
+
+
+
+
+
+
+
+
+                            <dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </dl>
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <h3 class="subsection-title">Methods</h3>
+
+                        <dl class="bs-docs-example bs-methods">
+
+                            <dt>
+                                <h4 class="name" id="getGifs">getGifs<span class="signature">(category, api_key, url,
+                                        limit)</span><span class="type-signature"> &rarr; {Array.&lt;Object>}</span>
+                                </h4>
+
+
+                            </dt>
+                            <dd>
+
+
+                                <div class="description">
+                                    <p>
+                                        Esta función realiza la petición al api.
+                                    </p>
+                                </div>
+
+
+
+
+
+
+
+                                <h5>Parameters:</h5>
+
+
+                                <table class="params table table-bordered table-condensed">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Name</th>
+
+
+                                            <th>Type</th>
+
+
+
+
+
+                                            <th class="last">Description</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+
+
+                                        <tr>
+
+                                            <td class="name">category</td>
+
+
+                                            <td class="type">
+
+
+                                                <span class="param-type">String</span>
+
+
+
+                                            </td>
+
+
+
+
+
+                                            <td class="description last">Nombre de la categoria a buscar.</td>
+                                        </tr>
+
+
+
+                                        <tr>
+
+                                            <td class="name">api_key</td>
+
+
+                                            <td class="type">
+
+
+                                                <span class="param-type">String</span>
+
+
+
+                                            </td>
+
+
+
+
+
+                                            <td class="description last">Clave personal obtenida en la pagina del api.
+                                            </td>
+                                        </tr>
+
+
+
+                                        <tr>
+
+                                            <td class="name">url</td>
+
+
+                                            <td class="type">
+
+
+                                                <span class="param-type">String</span>
+
+
+
+                                            </td>
+
+
+
+
+
+                                            <td class="description last">Url de la api a la cuál se realiza la petición.
+                                            </td>
+                                        </tr>
+
+
+
+                                        <tr>
+
+                                            <td class="name">limit</td>
+
+
+                                            <td class="type">
+
+
+                                                <span class="param-type">Number</span>
+
+
+
+                                            </td>
+
+
+
+
+
+                                            <td class="description last">Limite de resultados a traer desde el api.</td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+
+
+
+
+                                <dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                </dl>
+
+
+
+
+
+
+
+
+
+
+
+                                <h5>Returns:</h5>
+
+                                <div class="returns">
+
+
+
+                                    <span class="param-type">Array.&lt;Object></span>
+
+
+
+
+                                    <span class="param-desc">
+                                        - [{ id, title, url }, ...{}]
+                                    </span>
+
+                                </div>
+
+
+
+
+                            </dd>
+
+
+
+                            <dt>
+                                <h4 class="name" id="useFetchGifs">useFetchGifs<span
+                                        class="signature">(category)</span><span class="type-signature"> &rarr;
+                                        {Oject}</span></h4>
+
+
+                            </dt>
+                            <dd>
+
+
+                                <div class="description">
+                                    <p>
+                                        Este hook llama al helper que realiza la petición al api y ordena un poco la
+                                        data recibida.
+                                    </p>
+                                </div>
+
+
+
+
+
+
+
+                                <h5>Parameters:</h5>
+
+
+                                <table class="params table table-bordered table-condensed">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Name</th>
+
+
+                                            <th>Type</th>
+
+
+
+
+
+                                            <th class="last">Description</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+
+
+                                        <tr>
+
+                                            <td class="name">category</td>
+
+
+                                            <td class="type">
+
+
+                                                <span class="param-type">String</span>
+
+
+
+                                            </td>
+
+
+
+
+
+                                            <td class="description last">Categoria a buscar.</td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+
+
+
+
+                                <dl class="details">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                </dl>
+
+
+
+
+
+
+
+
+
+
+
+                                <h5>Returns:</h5>
+
+                                <div class="returns">
+
+
+
+                                    <span class="param-type">Oject</span>
+
+
+
+
+                                    <span class="param-desc">
+                                        - {data: [{id, title, url}, ...{}], loading: Boolean}
+                                    </span>
+
+                                </div>
+
+
+
+
+                            </dd>
+
+                        </dl>
+
+
+
+
+
+                    </article>
+
+                </section>
+
+
+
+
+            </div>
+        </div>
+
+        <br clear="both">
+
+        <script> prettyPrint(); </script>
+    </div>
+</body>
+
+</html>
