@@ -19,6 +19,6 @@ VITE_API_KEY=
 ```
 Cabe destacar que tenemos un archivo **.env.example** el cuál es un ejemplo del archivo **.env** que se debe utilizar.
 
-## Contribuyendo 🖇️
+## Documentación 🖇️
 
 Por favor dirijase a la [documentación](https://gist.github.com/villanuevand/xxxxxx) para obetener detalles acerca del funcionamiento del código.
