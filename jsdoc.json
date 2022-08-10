@@ -12,6 +12,6 @@
     "opts": {
         "recurse": true,
         "destination": "./docs",
-        "template": "./node_modules/jsdoc3-bootstrap"
+        "template": "./node_modules/ojeda-jsdoc-template"
     }
 }

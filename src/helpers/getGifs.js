@@ -10,7 +10,9 @@
  */
  export const getGifs = async( category, api_key, url, limit) => {
 
-    const resp = await fetch(`${url}?api_key=${api_key}&q=${ encodeURI( category )}&limit=${limit}`)
+    const urlFinished = `${url}?api_key=${api_key}&q=${ encodeURI( category )}&limit=${limit}`;
+
+    const resp = await fetch(urlFinished);
     const {data} = await resp.json();
     
     const gifs = data.map( img => {

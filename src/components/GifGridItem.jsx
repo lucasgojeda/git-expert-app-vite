@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
-import "../index.css";
-
 /**
  * Este componente es la "Card" donde pondremos individualmente cada gif para ser mostrado en la sección de resultados.
  * @module GifGridItem

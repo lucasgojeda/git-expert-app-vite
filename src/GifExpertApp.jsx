@@ -6,7 +6,7 @@ import GifGrid from './components/GifGrid';
  * Este componente es la vista principal y unica de la aplicación.
  * @module GifExpertApp
  */
-const GifExpertApp = ({ defaultCategories = [] }) => {
+export const GifExpertApp = ({ defaultCategories = [] }) => {
 
     /**
      * El siguiente useState maneja el estado de los resultados de busqueda.

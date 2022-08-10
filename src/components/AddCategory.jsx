@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 /**
  * En este componente encontramos el input en el cuál se introducen las nuevas categorias a buscar.
- * @module AddCategory
+ * @module AddCategory 
  */
 
 /**
  * @property {Function} setCategories - Sirve agregar nuevas categorias al Array de categorias a buscar, proviene del useState.
  */
-const AddCategory = ({setCategories}) => {
+export const AddCategory = ({setCategories}) => {
 
     /**
      * El siguiente useState maneja el valor del input de busquedas.
@@ -37,7 +37,7 @@ const AddCategory = ({setCategories}) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} aria-label="form">
             <p> { inputValue } </p>
             <input
                 type="text"

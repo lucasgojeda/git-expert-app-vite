@@ -1,9 +1,9 @@
 import React from 'react';
-import "animate.css";
 import PropTypes from 'prop-types';
 
 import { useFetchGifs } from '../hooks/useFetchGifs';
 import { GifGridItem } from './GifGridItem';
+import "animate.css";
 
 /**
  * Este componente muestra los resultados de las busquedas realizadas.
@@ -24,8 +24,8 @@ const GifGrid = ({ category }) => {
     return (
         <div className="card-grid">
             <h3>{category}</h3>
-            {loading && <p>Loading</p>}
-            {
+            {loading && <p>Cargando...</p>}
+            { 
                 images.map(({ id, title, url }) => {
                     return <GifGridItem key={id} title={title} url={url} />
                 })

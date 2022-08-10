@@ -1,10 +1,18 @@
 import { useEffect, useState } from "react";
+
+import { getEnvironmets } from "../helpers/getEnvironmets";
 import { getGifs } from "../helpers/getGifs";
 
-const api_url = import.meta.env.VITE_API_URL;
-const api_key = import.meta.env.VITE_API_KEY;
+
+const { VITE_API_URL: api_url, VITE_API_KEY: api_key } = getEnvironmets();
+// const env = getEnvironmets();
+
+// const api_url = import.meta.env.VITE_API_URL;
+// const api_key = import.meta.env.VITE_API_KEY;
 
 const limit = 10;
+
+// console.log(env)
 
 /**
  * Este hook llama al helper que realiza la petición al api y ordena un poco la data recibida.
