@@ -1,11 +1,10 @@
 export default {
   testEnvironment: 'jest-environment-jsdom',
-  transform: {
-    "^.+\\.(js|jsx)$": "babel-jest",
-    "/.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$/": "jest-transform-stub"
-  },
+  setupFiles: ['./jest.setup.js'],
+  transformIgnorePatterns: [],
+  
+  // ModuleNameMapper sólo si ocupamos importar CSS en nuestros componentes para el testing
   moduleNameMapper: {
-    "^.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
+      '\\.(css|less)$': '<rootDir>/tests/mocks/styleMock.js',
   },
-  setupFiles: ['./jest.setup.js']
 }
