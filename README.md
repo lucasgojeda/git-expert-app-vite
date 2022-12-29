@@ -1,24 +1,22 @@
 # Gif Expert App
 
-_Buscador de gifs consumidos desde una api_
+_Gif search engine consumed from an api_
 
-## Requisitos 🚀
+## Requirements 🚀
 
-Para hacer funcionar este proyecto se requiere como primero tener instalado
-**node js**
+To make this project work it is required as first to have installed **node js**
 
-Luego se requiere ingresar en las variables de entorno el link del **url** al que
-deseamos hacer nuestras peticiones
+Then it is required to enter in the environment variables the link of the **url** to which we want to make our requests
 ```
 VITE_API_URL=
 ```
 
-Por ultimo requerimos la **key** proporcionada por la pagina del api
+Finally we require the **key** provided by the api page
 ```
 VITE_API_KEY=
 ```
-Cabe destacar que tenemos un archivo **.env.example** el cuál es un ejemplo del archivo **.env** que se debe utilizar.
+It should be noted that we have a file **.env.example** which is an example of the **.env** file that should be used.
 
-## Documentación 🖇️
+## Documentation 🖇️
 
-Por favor dirijase a la [documentación](https://lucasgojeda.github.io/git-expert-app-vite/) para obetener detalles acerca del funcionamiento del código.
+Please refer to the [documentación](https://lucasgojeda.github.io/git-expert-app-vite/) for details on how the code works.
